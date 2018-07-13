@@ -12,7 +12,7 @@ function setup() {
 
 
 function draw() {
-  background(0, 255, 0);
+  background(0, 255, 255);
   drawSquares(random(30, 60));
 }
 
@@ -29,7 +29,8 @@ Hint: Some useful variables have been defined for you already! Use these variabl
       function from p5 to help you generate random positions and sizes for your rectangles!
 
 random(min, max) generates a random number between the 'min' number and the 'max'. 
-See https://p5js.org/reference/#group-Math for help!
+See https://p5js.org/reference/#group-Math for help! Also, see https://p5js.org/reference/#group-Shape
+for reference on how to use rect().
 */ 
 function drawSquares(num) {
   var randomX;
@@ -38,9 +39,7 @@ function drawSquares(num) {
   var randomRed;
   var randomGreen;
   var randomBlue;
-  while(){
-
-  }
+  // <YOUR CODE HERE>
   
 }
 
