@@ -1,0 +1,123 @@
+// Loops 
+
+// Let's review loops! 
+// Loops are an important concept in javascript and computer science. Let's take a look at an example. Let's say I want to print the numbers 0 through 4. 
+// Instead of coding this: 
+
+console.log(0);
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+
+// You can write this: 
+for (var number = 0; number < 5; number=number+1){
+  console.log(number);
+}
+
+
+// STOP: Write down what you think will be printed to the console before you move on.
+
+/*
+We use loops to run the same code over and over again and each repetition is called an iteration. The code in the loop will execute 5 times,  each time setting the value of the variable 'number' to a different value.  In the loop above, we use a variable to track how many times the loop runs. The variable starts at 0 (set by "var number = 0") and runs until the number is  no longer less than 5 (when "number < 5" is no longer true). [This is true for when number is equal to 0, 1, 2, 3, and 4, but NOT for 5]. You can call the variable name 'number' anything you want! 
+
+
+>>> *Mini Exercise: Try changing the code above such that it uses a variable named 'taco' instead of 'number'. 
+*/
+
+ 
+/******   In Javascript, we can have different types of loops: for, for/in, while, do/while  ******/
+
+
+
+/*     For Loops     **
+
+The example above is an illustration of a for loop. Let's take a look at another example. */
+
+
+for (var candy = 0; candy < 5; candy=candy+1) {
+  console.log("This is the ${candy}th time I’m going through this loop. " )
+}
+
+
+/*---  STOP: Write down what you think will be printed to the console before you move on. ------
+
+The first statement -- var candy = 0 -- is used to set the variable that we use in the loop. 
+
+>>> Mini-exercise: Do we need this statement? Try declaring the variable outside the function. Will the loop still run?  ------------------->
+
+The second statement -- candy < 5 -- sets the stopping condition for running our loop.
+
+>>> Mini-Exercise: Try changing this statement such that the code prints the numbers from 0 to (and including) 9. What happens if we replace 'candy < 5' with 'true'?-----------------> 
+
+The third statement - candy=candy+1 - is used to set how much our variable should change by every iteration of the loop. In the original example, we increase 'candy' by one, which allows our loop to run 5 times - from 0 up to 4. 
+
+>>> Mini-exercise: Change this statement such that the code prints every other number starting from 0.-----------------> 
+*/
+
+
+
+/**   For/in Loop   ***
+
+A for/in loop is just a for loop that uses a special keyword called 'in'. Let's take a look at the example below. This for-loop format reads intuitively like natural language: "For every student in the given list of students, do whatever's indented in the block." */
+
+var students = ['Karrel', 'Amara', 'Adrian', 'Bryana'];
+
+for (student in students){
+  console.log(student);
+}
+
+/*  STOP: Write down what you think will be printed to the console before you move on.   ------
+
+On each loop run, the 'student' variable takes on each item in the list of students. To see what I mean by this, try copying and pasting the code above (make sure to include the variable declaration in your code snippet) in the online editor! What is printed to the console, and how does that compare with the order of the students in the student list? (Answer: With each iteration of the loop, we print out each student in the students list!) 
+
+With this type of loop, we are able to iterate over some set of values, usually given by lists or even strings in Javascript. 
+
+>>> Mini-exercise: Try setting the variable to some string. What will Javascript print?--------------->  
+*/
+
+
+
+/** While Loops     ***
+
+While loops run until a certain condition is no longer true. Use a for loop if you know the number of times you'll need to execute the body (ex. "Loop through this list of students," "Check the first 1000 integers"), and use a while loop if you need to repeat the body for an indefinite amount of time until a condition is met.
+
+The below while loop exits when temp is no longer >= 12. */
+
+
+var temp = 115;
+console.log.('Cooling');
+
+while(temp >= 110){
+  console.log(temp);
+  temp -= 1; // Short for temp = temp - 1  
+}
+
+console.log("This coffee is cool enough.");
+
+
+/*--- STOP: Write down what you think will be printed to the console before you move on. ------
+
+>>> Mini-Exercise: Change the condition in the loop, such that the loop runs forever!-----------------> 
+**/
+
+
+
+/**   Do/While loops  ***
+
+Do/while loops in Javascript act very similarly to while loops. However, the block of code in the curly braces  will always run at least once, even if the condition in the while loop is false, because the code block is run before the condition is tested. 
+*/
+
+temp = 100;
+do {
+  console.log("Cooling: " + temp);
+  temp -= 1;
+}
+while (temp >= 110);
+
+
+/* STOP: Write down what you think will be printed to the console before you move on.
+
+>>> *Mini Exercise: Try writing a do/while loop where the code in the curly braces runs more than once! ----------------------------> 
+
+********/
