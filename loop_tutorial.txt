@@ -36,7 +36,7 @@ The example above is an illustration of a for loop. Let's take a look at another
 
 
 for (var candy = 0; candy < 5; candy=candy+1) {
-  console.log("This is the ${candy}th time I’m going through this loop. " )
+  console.log("This is the " + candy + "th time I’m going through this loop. " )
 }
 
 
